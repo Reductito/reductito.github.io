@@ -8,6 +8,15 @@ body {
 	background-color: #000080;
 }
 
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 50px;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -65,16 +74,6 @@ main img {
 	max-width: 350px;
 	height: 100%;
 	margin: 0 100px 0 100px;
-}
-
-
-#page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-#content-wrap {
-	padding-bottom: 50px;
 }
 
 #footer {
