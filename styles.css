@@ -64,13 +64,24 @@ p {
 	padding: 100px 20px 0 20px;
 }
 
-footer {
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 50px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 10px;
 	color: #ffffff;
 	display: flex;
 	justify-content: center;
 	background-color: #6A5ACD;
-	padding: 15px 10px;
-	width: 100%;
 }
 
 @media screen and (max-width: 1050px) {
@@ -92,9 +103,3 @@ footer {
 		margin: 10px;
 		width: 100%;
 	}
-	
-@media screen and (max-width: 450px) {
-		.nav-links a {
-			margin: 10px;
-			width: 100%;
-		}
