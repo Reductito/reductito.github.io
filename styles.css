@@ -8,6 +8,15 @@ body {
 	background-color: #000080;
 }
 
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 50px;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -62,15 +71,6 @@ img {
 p {
 	color: #ffffff;
 	padding: 100px 20px 0 20px;
-}
-
-#page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-#content-wrap {
-	padding-bottom: 50px;
 }
 
 #footer {

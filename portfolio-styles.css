@@ -8,6 +8,15 @@ body {
 	background-color: #000080;
 }
 
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 50px;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -50,13 +59,8 @@ nav {
 	font-weight: 700;
 }
 
-#page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-#content-wrap {
-	padding-bottom: 50px;
+main img {
+	max-width: 300px;
 }
 
 #footer {
@@ -71,20 +75,7 @@ nav {
 }
 
 @media screen and (max-width: 950px) {
-	main img {
-		width: 42%;
-		margin: 8% 3% 0 3%;
-	}
-	main {
-		padding: 10% 0 7.5% 0;
-	}
-	main section{
-		padding: 5% 0 0 5%;
-	}
-	p {
-		padding: 0 0 0 0;
-		font-size: 3vw;
-	}
+	
 }
 
 @media screen and (max-width: 450px) {
