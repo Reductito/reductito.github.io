@@ -50,6 +50,30 @@ nav {
 	font-weight: 700;
 }
 
+main {
+	display: flex;
+	margin: 50px;
+}
+
+main div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 80px 0 0 0;
+}
+
+main div a {
+	text-decoration: underline;
+	color: #ffffff;
+	margin: 10px 0;
+	font-size: 32px;
+}
+
+main img {
+	max-width: 400px;
+}
+
 #page-container {
 	position: relative;
 	min-height: 100vh;
@@ -70,20 +94,28 @@ nav {
 	background-color: #6A5ACD;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
 	main img {
 		width: 42%;
-		margin: 8% 3% 0 3%;
+		height: auto;
 	}
-	main {
-		padding: 10% 0 7.5% 0;
-	}
-	main section{
-		padding: 5% 0 0 5%;
-	}
-	p {
-		padding: 0 0 0 0;
+	main div a {
 		font-size: 3vw;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	main {
+		flex-direction: column-reverse;
+	}
+	main div {
+		margin: 20px 0;
+	}
+	main div a {
+		font-size: 4vw;
+	}
+	main img {
+		margin: 10% 30%;
 	}
 }
 
