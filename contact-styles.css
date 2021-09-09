@@ -13,14 +13,9 @@ body {
 	min-height: 100vh;
 }
 
-#content-wrap {
-	padding-bottom: 50px;
-}
-
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 0;
 	background-color: #000080;
 }
 
@@ -61,7 +56,7 @@ nav {
 
 main {
 	display: flex;
-	margin: 50px;
+	margin: 50px 50px 0 50px;
 }
 
 main div {
@@ -107,6 +102,7 @@ main img {
 @media screen and (max-width: 860px) {
 	main {
 		flex-direction: column-reverse;
+		margin-bottom: 0px;
 	}
 	main div {
 		margin: 20px 0;
@@ -116,6 +112,8 @@ main img {
 	}
 	main img {
 		margin: 10% 30%;
+		padding-bottom: 20%;
+		
 	}
 }
 
