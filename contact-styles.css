@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Azeret Mono', monospace;
+}
+
+body {
+	margin: 0;
+	background-color: #000080;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000080;
+}
+
+.logo {
+	margin: 10px;
+}
+
+.logo img {
+max-width: 64px;
+}
+
+.hidden {
+	margin: 10px;
+	visibility: hidden;
+}
+
+header h3 {
+	margin: 20px 0 0 0;
+	color: #fff;
+}
+
+nav {
+	background-color: #6A5ACD;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-links a {
+	text-transform: capitalize;
+	text-decoration: none;
+	margin: 10px 30px 10px 30px;
+	color: #fff;
+	font-weight: 700;
+}
+
+main {
+	display: flex;
+	margin: 50px 50px 0 50px;
+}
+
+main div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 80px 0 0 0;
+}
+
+main div a {
+	text-decoration: underline;
+	color: #fff;
+	margin: 10px 0;
+	font-size: 32px;
+}
+
+main img {
+	max-width: 400px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 10px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	background-color: #6A5ACD;
+}
+
+@media screen and (max-width: 1050px) {
+	main img {
+		width: 42%;
+		height: auto;
+	}
+	main div a {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	main {
+		flex-direction: column-reverse;
+		margin-bottom: 0px;
+	}
+	main div {
+		margin: 20px 0;
+	}
+	main div a {
+		font-size: 4vw;
+	}
+	main img {
+		margin: 10% 30%;
+		padding-bottom: 20%;
+		
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.nav-links a {
+		margin: 10px;
+		width: 100%;
+	}
+}

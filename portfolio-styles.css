@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Azeret Mono', monospace;
+}
+
+body {
+	margin: 0;
+	background-color: #000080;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000080;
+}
+
+.logo {
+	margin: 10px;
+}
+
+.logo img {
+max-width: 64px;
+}
+
+.hidden {
+	margin: 10px;
+	visibility: hidden;
+}
+
+header h3 {
+	margin: 20px 0 0 0;
+	color: #fff;
+}
+
+nav {
+	background-color: #6A5ACD;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-links a {
+	text-transform: capitalize;
+	text-decoration: none;
+	margin: 10px 30px 10px 30px;
+	color: #fff;
+	font-weight: 700;
+}
+
+main {
+	color: #fff;
+	margin: 0 200px 0 200px;
+	padding: 0 0 80px 0;
+}
+
+section {
+	padding: 50px;
+}
+
+section:nth-child(3) {
+	margin-top: 10px;
+}
+
+main section h1 {
+	font-size: 32px;
+}
+
+.portfolio-project {
+	border: 2px solid #fff;
+}
+
+.project-title {
+	display: flex;
+}
+
+i {
+	color: #fff;
+	padding: 15px 0 0 25px;
+	font-size: 32px;
+}
+
+.project-contents {
+	display: flex;
+}
+
+.project-contents p {
+	margin: 0 40px 0 40px;
+}
+
+.project-contents img {
+	max-width: 300px;
+	max-height: 259px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 10px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	background-color: #6A5ACD;
+}
+
+@media screen and (max-width: 1100px) {
+	main {
+		margin: 0 5% 0 5%;
+	}
+	.project-contents {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.project-contents p {
+		margin: 10px 20px 4px 20px;
+	}
+	
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio-heading {
+		padding: 0;
+	}
+	.portfolio-project {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.nav-links a {
+		margin: 10px;
+		width: 100%;
+	}
+}
