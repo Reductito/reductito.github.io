@@ -56,7 +56,8 @@ nav {
 
 main {
 	display: flex;
-	margin: 100px 0 100px 0;
+	margin: 100px 0 0px 0;
+	padding-bottom: 100px;
 }
 
 img {
